@@ -258,7 +258,7 @@ CREATE TABLE user_preferences (
 
 ## Struktura Katalogów Aplikacji
 
-```
+```plaintext
 notai/
 ├── .github/                    # Konfiguracja GitHub Actions
 ├── apps/
