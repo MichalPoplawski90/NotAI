@@ -1,0 +1,29 @@
+{
+  "name": "notai",
+  "version": "1.0.0",
+  "main": "next.config.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichalPoplawski90/NotAI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichalPoplawski90/NotAI/issues"
+  },
+  "homepage": "https://github.com/MichalPoplawski90/NotAI#readme",
+  "description": "",
+  "dependencies": {
+    "@expo/metro-runtime": "^4.0.1",
+    "expo": "^49.0.23",
+    "expo-cli": "^6.3.12",
+    "metro-core": "^0.82.1"
+  }
+}
