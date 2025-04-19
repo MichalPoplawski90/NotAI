@@ -22,8 +22,11 @@
   "description": "",
   "dependencies": {
     "@expo/metro-runtime": "^4.0.1",
-    "expo": "^49.0.23",
-    "expo-cli": "^6.3.12",
+    "expo": "^52.0.46",
+    "expo-cli": "^4.0.17",
     "metro-core": "^0.82.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
   }
 }

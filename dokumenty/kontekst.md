@@ -1,8 +1,11 @@
 # System Asystenta AI dla Notariusza
 
 ## Cel Projektu
+
 Zawansowane narzędzie zastępujące pracę dobrze wyuczonego aplikanta czy zastępcy notarialnego sporządzającego projekty aktów notarialnych oraz utrzymującego kontakt z klientami. Płatna na zasadzie subskrypcji Aplikacja webowa z przyjaznym i intuicyjnym interfejsem dopuszczającym drobne dynamiczne modyfikacje interfejsu przez AI, która to aplikacja usprawni pracę polskiego notariusza. Aplikacja webowa notai ma przeprowadzić notariusza - użytkownika, od zalogowania i uwierzytelnienia subskrypcji, do wyboru typu sprawy, do analizy stylu aktów notarialnych danego notariusza - użytkownika dotyczących danej sprawy, poprzez wgranie do aplikacji i analizy max 2 dotychczas napisanych przez niego aktów i dotyczących pokrewnej sprawy, a to w celu ustalenia stylu danego notariusza, do wprowadzania przez niego prostego opisu sprawy, do wykazu dokumentów potrzebnych do przeprowadzenia sprawy z możliwością modyfikacji listy przez notariusza z zapamiętaniem preferencji, do analizy dokumentów ich znaczenia dla sprawy orz ich kompletności, do analizy kompletności wszelkich danych w celu stwierdzenia czy system notai jest gotowy, do wygenerowania rzetelnego projektu aktu notarialnego, zgodnego z prawem polskim i stylem notariusza. Dodatkowo potrafiący zapamiętać i wdrożyć preferencje notariusza poprzez m.in. analizę wyborów dokonanych za pośrednictwem aplikacji notai. Podsumowując Notai po walidacji kompletności danych ma gwarantować wysokiej jakości akt notarialny zgodny z prawem, stylem notariusza i założeniami transakcji.
+
 ## Tech Stack i Architektura NotAI
+
 Frontend
 
 React 18+ z TypeScript
@@ -43,6 +46,7 @@ Optymalizacja dla urządzeń mobilnych
 Możliwość pracy offline dla kluczowych funkcji
 
 ## Główne Funkcjonalności
+
 Tech Stack i Architektura NotAI
 Frontend
 
@@ -90,7 +94,9 @@ Szyfrowanie danych w spoczynku
 Responsywny design
 Optymalizacja dla urządzeń mobilnych
 Możliwość pracy offline dla kluczowych funkcji
+
 ### 1. Zbieranie Wymagań
+
 - **Wprowadzanie Opisu Sprawy**
   - Możliwość opisu tekstowego
   - Wypełnianie predefiniowanych kafelków z danymi
@@ -103,27 +109,32 @@ Możliwość pracy offline dla kluczowych funkcji
   - Generowanie listy wymaganych dokumentów
 
 ### 2. Analiza Dokumentów
+
 - Skanowanie i parsowanie dokumentów
 - Ekstrakcja kluczowych informacji
 - Monitorowanie kompletności dokumentacji
 - Wykrywanie i raportowanie potencjalnych zagrożeń prawnych
 
 ### 3. Bezpieczeństwo Danych
+
 - Lokalna anonimizacja danych osobowych
 - System tokenizacji dla serwerów analitycznych
 - Przetwarzanie zanonimizowanych materiałów
 
 ### 4. System Uczenia Stylu
+
 - Analiza dotychczasowych aktów notarialnych
 - Identyfikacja charakterystycznych zwrotów
 - Rozpoznawanie struktury dokumentów
 
 ### 5. Generowanie Dokumentów
+
 - Tworzenie wstępnych wersji aktów
 - Implementacja wyuczonego stylu
 - Dostosowanie do specyfiki konkretnej sprawy
 
 ### 6. System Doskonalenia
+
 - Możliwość wprowadzania poprawek przez notariusza
 - Zapisywanie preferencji użytkownika
 - Adaptacja systemu do przyszłych dokumentów
@@ -131,6 +142,7 @@ Możliwość pracy offline dla kluczowych funkcji
 ## Szczegółowy Schemat Bazy Danych
 
 ### Users (Notariusze i Asystenci)
+
 ```sql
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
@@ -149,6 +161,7 @@ CREATE TABLE users (
 ```
 
 ### Cases (Sprawy Notarialne)
+
 ```sql
 CREATE TABLE cases (
     id SERIAL PRIMARY KEY,
@@ -165,6 +178,7 @@ CREATE TABLE cases (
 ```
 
 ### Parties (Strony Transakcji)
+
 ```sql
 CREATE TABLE parties (
     id SERIAL PRIMARY KEY,
@@ -183,6 +197,7 @@ CREATE TABLE parties (
 ```
 
 ### Documents (Dokumenty)
+
 ```sql
 CREATE TABLE documents (
     id SERIAL PRIMARY KEY,
@@ -199,6 +214,7 @@ CREATE TABLE documents (
 ```
 
 ### Acts (Akty Notarialne)
+
 ```sql
 CREATE TABLE acts (
     id SERIAL PRIMARY KEY,
@@ -214,6 +230,7 @@ CREATE TABLE acts (
 ```
 
 ### DocumentTemplates (Szablony Dokumentów)
+
 ```sql
 CREATE TABLE document_templates (
     id SERIAL PRIMARY KEY,
@@ -228,6 +245,7 @@ CREATE TABLE document_templates (
 ```
 
 ### UserPreferences (Preferencje Użytkownika)
+
 ```sql
 CREATE TABLE user_preferences (
     id SERIAL PRIMARY KEY,
